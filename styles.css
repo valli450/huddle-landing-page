@@ -1,0 +1,252 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* CSS Reset */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style */
+header{
+    margin: 3rem 3rem 1.5rem 0 ;   
+} 
+
+header .logo img{
+    width: 8rem;
+}
+
+body{
+    position: relative;
+    align-items: center;
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+    margin: 1rem auto;
+    width: 16rem;
+    color: #fff;
+}
+
+.container .image img{
+    width: 16rem;
+}
+
+.text{
+    margin-top: 2rem;
+    text-align: center;
+    position: relative;
+    
+}
+
+.text .head-text h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.text .description{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text .description p{
+    font-weight: 400;
+}
+
+.text .register-button{
+    margin: 0 auto;
+}
+
+.text .register-button button{
+    border: none;
+    color: var(--violet);
+    background-color: #fff;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 20px;
+    padding-top: 0.18rem;
+}
+
+.text .social-links{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2rem);
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links img{
+    width: 0.5rem;
+    color: #fff
+}
+
+ion-icon {
+    color: #fff;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.text .register-button button:hover{
+    background-color: var(--soft-magenta);
+    color: #fff;
+    cursor: pointer;
+}
+
+.link-border:hover{
+    cursor: pointer;
+}
+
+ion-icon:hover{
+    cursor: pointer;
+    color: var(--soft-magenta);
+    border-color: var(--soft-magenta)
+}
+
+footer{
+    margin: 3rem;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 400px){
+    header .logo img{
+        width: 10rem;
+    }
+    body{
+        width: 20rem;
+    }
+    .container .image img{
+        width: 20rem;
+    }
+}
+
+@media (min-width: 480px){
+    header .logo img{
+        width: 12rem;
+    }
+    body{
+        width: 24rem;
+    }
+    .container .image img{
+        width: 24rem;
+    }
+}
+
+@media (min-width: 769px){
+    header{
+        margin: 5rem 5rem 2.5rem 0 ;   
+    } 
+
+    header .logo img{
+        width: 12rem;
+    }
+
+    body{
+        width: 50rem;
+        margin-left: 5rem; 
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--violet);
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 20rem);
+    }
+
+    .container .image img{
+        width: 20rem;
+        height: 16rem;
+    }
+
+    .text{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        text-align: left;
+        position: relative;
+    }
+
+    .description p{
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: -0.3rem;
+    }
+
+    
+     
+    .text .register-button{
+        margin-left: 0;
+        margin-top: -1rem;
+        text-align: center;
+    }
+
+    .text .social-links {
+        text-align: center;
+        margin-right: -9rem;
+        padding-bottom: -10rem;
+    }
+}
+
+@media (min-width: 920px) {
+    header{
+        margin: 5rem 5rem 2.5rem 0 ;   
+    } 
+
+    header .logo img{
+        width: 16rem;
+    }
+
+    body{
+        width: 80rem;
+        margin-left: 7rem; 
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .container .image img{
+        width: 40rem;
+        height: 28rem;
+    }
+
+    .text{
+        margin-top: 3rem;
+        margin-left: 2rem;
+        text-align: left;
+        position: relative;
+    }
+
+    .description p{
+        font-weight: 400;
+        font-size: 13px;
+        margin-top:3rem;
+        margin-bottom: 5rem;
+    }
+
+    
+     
+   
+
+    .text .social-links {
+        text-align: center;
+        margin-top: 10rem;
+        margin-right: -9rem;
+        padding-bottom: -10rem;
+    }
+}
